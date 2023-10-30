@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* Common */
+.right_bottom_radius {
+  border-bottom-right-radius: 8rem !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  color: red;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide .text {
+  z-index: 10000;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  font-weight: 700;
+}
+
+.container {
+  overflow-x: hidden;
+}
+/* Partner */
+.partner_bg {
+  background: #4b238bd5 !important;
+  backdrop-filter: blur(5px);
+  border-radius: 10px !important;
+}
+
+/* border left top and left bottom radius */
+.border_left_top_bottom {
+  /* border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important; */
+  border: 1px solid #d3d3d3 !important;
+}
+
+.appointment_border {
+  border: 1px solid #d3d3d3 !important;
+}
