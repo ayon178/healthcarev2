@@ -88,6 +88,17 @@ body {
   animation: moveTrain 2s infinite linear alternate;
 }
 
+.moving-train-left {
+  position: absolute;
+  top: 5px; /* Adjust this value to align with your existing border */
+  left: -4px; /* Adjust this value to align with your existing border */
+  width: 4px; /* Width of the "train" */
+  height: 15px; /* Height of the "train" */
+  background-color: #5235a0; /* Color of the "train" */
+  animation: moveTrain 2s infinite linear alternate;
+}
+
+
 @keyframes moveTrain {
   0% {
     top: 0px;

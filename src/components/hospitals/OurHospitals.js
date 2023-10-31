@@ -80,13 +80,18 @@ const OurHospitals = () => {
   // }, [])
 
   return (
-    <div className="container mx-auto mt-8">
-      <h1 className="text-primary text-2xl md:text-3xl text-center font-semibold w-fit mx-auto border-b-2 border-secondary mt-10 pb-2">
-        Our Hospitals
-      </h1>
-      <h1 className="text-center mt-10 mb-5 font-medium bg-primary px-4 py-1 text-white rounded-md w-fit block mx-auto">
-        India
-      </h1>
+    <div className="container mx-auto mt-8 md:flex items-center gap-4">
+      <div className="md:order-2 md:border-l-4  border-secondary pl-4 flex flex-col justify-center relative">
+        <h1 className="text-primary text-2xl md:text-3xl text-center md:text-left font-semibold w-fit mx-auto mt-10 pb-2 border-b-2 md:border-0 border-secondary">
+          Our
+          <br />
+          Partners
+        </h1>
+        <h1 className="text-center md:text-left mt-10 md:mt-4 mb-5 font-medium bg-white px-4 py-1 text-primary border-primary border-2 rounded-md w-fit block mx-auto md:mx-0">
+          Area 1
+        </h1>
+        <div className="moving-train-left hidden md:block"></div>
+      </div>
       <div className="mx-auto text-center px-2 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full md:w-[80%] lg:w-[70%] gap-4 mt-4">
         {cardData.map((card, index) => (
           <div key={index} className={`partner-card-${index}`}>
