@@ -90,16 +90,55 @@ const OurServices = () => {
   // }, [])
 
   return (
-    <div className="container mx-auto">
-      <h1 className="text-primary text-2xl md:text-3xl text-center font-semibold w-fit mx-auto border-b-2 border-secondary  mt-10 pb-2">
-        Our Services
-      </h1>
-      <div className="mx-auto text-center px-2 md:px-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 w-full md:w-[90%] lg:w-[80%] gap-4 mt-8">
-        {cardData.map((card, index) => (
-          <div key={index} className={`service-card-${index}`}>
-            <OurServicesCard data={card} />
-          </div>
-        ))}
+    <div className="container mx-auto md:flex items-center justify-between">
+      <div className="md:w-[40%] border-r-4 mt-10 md:mt-0 border-secondary pr-4 flex flex-col justify-center relative">
+        <h1 className="text-primary text-2xl md:text-3xl text-center md:text-right font-semibold  pb-2">
+          Our Services
+        </h1>
+        <p className="text-center md:text-right text-primary text-sm">
+          Lorem ipsum dolor sit amet consectetur,
+          <br />
+          adipisicing elit. Libero, amet?
+        </p>
+        <div className="flex md:justify-end">
+          <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-primaryText mt-2">
+            Call to Order
+          </button>
+        </div>
+        <div className="moving-train hidden md:block"></div>
+      </div>
+      <div className=" w-full md:w-[60%]  mt-8">
+        <div className="mx-auto text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+          {cardData.slice(0, 2).map((card, index) => (
+            <div key={index} className={`service-card-${index}`}>
+              <OurServicesCard data={card} />
+            </div>
+          ))}
+        </div>
+
+        <div className="mx-auto my-4 text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+          {cardData.slice(2, 5).map((card, index) => (
+            <div key={index} className={`service-card-${index}`}>
+              <OurServicesCard data={card} />
+            </div>
+          ))}
+        </div>
+
+        <div className="mx-auto text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+          {cardData.slice(5, 8).map((card, index) => (
+            <div key={index} className={`service-card-${index}`}>
+              <OurServicesCard data={card} />
+            </div>
+          ))}
+        </div>
+
+        <div className="mx-auto text-center mt-4 px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+          {cardData.slice(8, 10).map((card, index) => (
+            <div key={index} className={`service-card-${index}`}>
+              <OurServicesCard data={card} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

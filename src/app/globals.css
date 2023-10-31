@@ -77,3 +77,22 @@ body {
 .appointment_border {
   border: 1px solid #d3d3d3 !important;
 }
+
+.moving-train {
+  position: absolute;
+  top: 5px; /* Adjust this value to align with your existing border */
+  right: -4.4px; /* Adjust this value to align with your existing border */
+  width: 4.4px; /* Width of the "train" */
+  height: 15px; /* Height of the "train" */
+  background-color: #5235a0; /* Color of the "train" */
+  animation: moveTrain 2s infinite linear alternate;
+}
+
+@keyframes moveTrain {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: calc(100% - 15px); /* Adjust to match the height of your container */
+  }
+}
