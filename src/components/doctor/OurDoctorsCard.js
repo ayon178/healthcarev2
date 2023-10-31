@@ -4,7 +4,6 @@ import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from 'react-icons/bs'
 const OurDoctorCard = ({ data }) => {
   return (
     <>
-
       <div
         style={{
           backgroundImage: ` url(${data.image.src})`,

@@ -8,6 +8,7 @@ import OurHospitals from '@/components/hospitals/OurHospitals'
 import MainGallery from '@/components/mainGallery/MainGallery'
 import OurServices from '@/components/service/OurServices'
 import Navbar from '@/components/shared/Navbar'
+import DoctorsSliderCentered from '@/components/slider/Doctors'
 import MainSlider from '@/components/slider/MainSlider'
 import OurVision from '@/components/vision/OurVision'
 import gsap from 'gsap'
@@ -85,6 +86,7 @@ export default function Home() {
         <About />
         <OurVision />
         <OurDoctors />
+        <DoctorsSliderCentered />
         {/* <Gallery /> */}
         <MainGallery />
         <Appointment />

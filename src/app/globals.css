@@ -108,4 +108,103 @@ body {
   }
 }
 
-/* About us */
+/* Slick slider */
+.slick-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.slick-list {
+  position: relative;
+  display: block !important;
+  overflow: hidden;
+  /* height: 50% !important; */
+  padding: 40px 100px !important;
+  width: 90%;
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.slick-slide div {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slick-slide div div span {
+  margin-top: 10px;
+  width: inherit;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #111;
+}
+@media screen and (max-width: 580px) {
+  .slick-slide div div span {
+    display: none;
+  }
+  .slick-slide.slick-current div div span {
+    display: block;
+    margin-top: 10px;
+    width: inherit;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #111;
+  }
+}
+.slick-slide:not(.slick-active) {
+  position: relative;
+  z-index: 997;
+  transform: scale(0.8);
+  transition: 0.25s;
+}
+.slick-slide.slick-active:not(.slick-current) {
+  position: relative;
+  z-index: 998;
+  transform: scale(0.9);
+  transition: 0.25s;
+}
+.slick-slide.slick-active.slick-current {
+  position: relative;
+  z-index: 999;
+  transform: scale(1);
+  transition: 0.25s;
+}
+.slick-slide.slick-active:not(.slick-current) .image,
+.slick-slide.slick-active.slick-current .image,
+.slick-slide:not(.slick-active) .image {
+  width: 70% !important;
+}
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+.custom-prevArrow,
+.custom-nextArrow {
+  position: relative;
+  z-index: 99999;
+  top: -10px;
+}
+.custom-prevArrow {
+  left: -10px;
+  fill: #31f6d3;
+}
+.custom-nextArrow {
+  right: -10px;
+  fill: #31f6d3;
+}
+.custom-prevArrow:hover,
+.custom-nextArrow:hover {
+  fill: #007761;
+  cursor: pointer;
+}

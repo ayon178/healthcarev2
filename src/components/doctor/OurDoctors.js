@@ -2,7 +2,8 @@ import doctorOne from '../../assets/doct1.png'
 import doctorTwo from '../../assets/doct2.png'
 import doctorThree from '../../assets/doct3.png'
 import doctorFour from '../../assets/doct4.png'
-import OurDoctorCard from './OurDoctorsCard'
+import DoctorsSliderCentered from '../slider/Doctors'
+import DoctorsAuto from '../slider/DoctorsAuto'
 
 const doctorData = [
   {
@@ -29,19 +30,42 @@ const doctorData = [
     degignation: 'Cardiologist',
     details: '10 years of experience in medical practices.',
   },
+  {
+    name: 'Amanda Jepson',
+    image: doctorThree,
+    degignation: 'Neurosurgeon',
+    details: '10 years of experience in medical practices.',
+  },
+  {
+    name: 'William Anderson',
+    image: doctorFour,
+    degignation: 'Cardiologist',
+    details: '10 years of experience in medical practices.',
+  },
 ]
 
 const OurDoctors = () => {
   return (
-    <div className="container mx-auto px-4 md:px-0 mt-8">
-      <h1 className="text-primary text-2xl md:text-3xl text-center font-semibold w-fit mx-auto border-b-2 border-secondary mt-10 pb-2">
-        Our Doctors
-      </h1>
+    <div className="container mx-auto px-4 md:px-0 mt-24 md:flex ">
+      <div className="w-1/5">
+        <h1 className="text-primary text-2xl md:text-4xl text-center md:text-left font-semibold w-fit  border-b-2 border-secondary mt-10 pb-2">
+          Our
+          <br />
+          Doctors
+        </h1>
+        <p className="text-sm mt-2 text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+          voluptatem?
+        </p>
+      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10 w-full md:w-[95%] lg:w-[80%] mx-auto px-4 md:px-0">
-        {doctorData.map((data, index) => (
-          <OurDoctorCard key={index} data={data} />
-        ))}
+      <div className="w-4/5">
+        <div className="shadow-lg">
+          <DoctorsSliderCentered sliderData={doctorData} />
+        </div>
+        <div className=" mt-10">
+          <DoctorsAuto sliderData={doctorData} />
+        </div>
       </div>
     </div>
   )
