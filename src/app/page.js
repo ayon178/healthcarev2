@@ -5,6 +5,7 @@ import Appointment from '@/components/appointment/Appointment'
 import OurDoctors from '@/components/doctor/OurDoctors'
 import Gallery from '@/components/gallery/Gallery'
 import OurHospitals from '@/components/hospitals/OurHospitals'
+import MainGallery from '@/components/mainGallery/MainGallery'
 import OurServices from '@/components/service/OurServices'
 import Navbar from '@/components/shared/Navbar'
 import MainSlider from '@/components/slider/MainSlider'
@@ -84,7 +85,8 @@ export default function Home() {
         <About />
         <OurVision />
         <OurDoctors />
-        <Gallery />
+        {/* <Gallery /> */}
+        <MainGallery />
         <Appointment />
       </main>
     </>
