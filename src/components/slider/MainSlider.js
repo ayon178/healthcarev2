@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { gsap } from 'gsap'
 import { AnimatePresence } from 'framer-motion'
-import mainImage from '../../assets/main_slider.jpg'
+import mainImage from '../../assets/slider_main.png'
 // import secondImage from '../../assets/slider/slide_2.jpg'
 // import thirdImage from '../../assets/slider/slide_3.jpg'
 
@@ -71,15 +71,19 @@ const MainSlider = () => {
           transition={{ duration: 2 }}
         >
           <div
-            className="w-1/2 sm:w-full  overflow-hidden right_bottom_radius"
+            className="w-1/2 sm:w-full overflow-hidden right_bottom_radius relative"
             style={{ height: 'calc(100vh - 70px)' }}
           >
-            <img
-              src={images[currentSlide].image.src}
-              alt={images[currentSlide].alt}
+            <div
               className="object-cover w-full h-full slide-img"
+              style={{
+                backgroundImage: `linear-gradient(to left, rgba(5,32,73,0.3), rgba(5,32,73,.8)), url(${images[currentSlide].image.src})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'top center',
+              }}
             />
           </div>
+
           <div className="w-1/2 sm:w-full">
             <div className={` text-white`}>
               <h1 className="text-4xl text-white font-semibold w-1/2">

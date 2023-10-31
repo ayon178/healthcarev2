@@ -80,7 +80,7 @@ const OurHospitals = () => {
   // }, [])
 
   return (
-    <div className="container mx-auto mt-8 md:flex items-center gap-4">
+    <div className="container mx-auto mt-24 md:flex items-center gap-4">
       <div className="md:order-2 md:border-l-4  border-secondary pl-4 flex flex-col justify-center relative">
         <h1 className="text-primary text-2xl md:text-3xl text-center md:text-left font-semibold w-fit mx-auto mt-10 pb-2 border-b-2 md:border-0 border-secondary">
           Our

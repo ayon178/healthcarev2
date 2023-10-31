@@ -78,6 +78,7 @@ body {
   border: 1px solid #d3d3d3 !important;
 }
 
+/* Moving border */
 .moving-train {
   position: absolute;
   top: 5px; /* Adjust this value to align with your existing border */
@@ -98,7 +99,6 @@ body {
   animation: moveTrain 2s infinite linear alternate;
 }
 
-
 @keyframes moveTrain {
   0% {
     top: 0px;
@@ -107,3 +107,5 @@ body {
     top: calc(100% - 15px); /* Adjust to match the height of your container */
   }
 }
+
+/* About us */

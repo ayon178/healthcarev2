@@ -1,5 +1,6 @@
 'use client'
 
+import About from '@/components/about/About'
 import Appointment from '@/components/appointment/Appointment'
 import OurDoctors from '@/components/doctor/OurDoctors'
 import Gallery from '@/components/gallery/Gallery'
@@ -80,6 +81,7 @@ export default function Home() {
       <main>
         <OurServices />
         <OurHospitals />
+        <About />
         <OurVision />
         <OurDoctors />
         <Gallery />
