@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from 'react-icons/bs'
 import star from '../../assets/doctor/star.png'
 
-const OurDoctorCard = ({ data, classData }) => {
+const OurDoctorCard = ({ data, classData, starBool }) => {
   return (
     <>
       <div
@@ -12,7 +12,7 @@ const OurDoctorCard = ({ data, classData }) => {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
-        className={`relative ${classData} mx-auto max-w-sm p-0 pb-4 bg-slate-100 border border-gray-200 rounded-xl dark:bg-gray-800 dark:border-gray-700 shadow-2xl`}
+        className={`relative ${classData} mx-auto max-w-sm p-0 pb-4`}
       >
         <div className="partner_bg absolute bottom-0 flex items-center justify-end flex-col w-full pb-4 h-28">
           <div className="relative h-full w-full">
@@ -31,13 +31,15 @@ const OurDoctorCard = ({ data, classData }) => {
             {data.details}
           </p>
         </div>
-        <Image
-          src={star.src}
-          alt="star"
-          height={20}
-          width={20}
-          className="absolute -top-2 -left-2 w-fit mx-auto"
-        />
+        {starBool && (
+          <Image
+            src={star.src}
+            alt="star"
+            height={20}
+            width={20}
+            className="absolute -top-2 -left-2 w-fit mx-auto"
+          />
+        )}
       </div>
     </>
   )

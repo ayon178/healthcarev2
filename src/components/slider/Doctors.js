@@ -57,7 +57,11 @@ const DoctorsSliderCentered = ({ sliderData }) => {
       {sliderData.map((slide, index) => {
         return (
           <div key={index}>
-            <OurDoctorCard data={slide} classData={'h-96 w-full'} star={true} />
+            <OurDoctorCard
+              data={slide}
+              classData={'h-96 w-full'}
+              starBool={true}
+            />
           </div>
         )
       })}

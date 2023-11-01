@@ -9,7 +9,7 @@ SwiperCore.use([Autoplay])
 
 const DoctorsAuto = ({ sliderData }) => {
   return (
-    <div className="relative">
+    <div className="relative mb-8">
       <Swiper
         slidesPerView={4}
         spaceBetween={10}
@@ -28,7 +28,7 @@ const DoctorsAuto = ({ sliderData }) => {
       >
         {sliderData.map((slide, index) => {
           return (
-            <SwiperSlide key={index} >
+            <SwiperSlide className="bg-transparent h-[50%]" key={index}>
               <OurDoctorCard data={slide} classData={'h-80 w-[85%]'} />
             </SwiperSlide>
           )
@@ -37,7 +37,7 @@ const DoctorsAuto = ({ sliderData }) => {
         {/* Duplicate the slides to continue the loop */}
         {sliderData.map((slide, index) => {
           return (
-            <SwiperSlide key={index}>
+            <SwiperSlide className="bg-transparent h-[50%]" key={index}>
               <OurDoctorCard data={slide} classData={'h-80 w-[85%]'} />
             </SwiperSlide>
           )
