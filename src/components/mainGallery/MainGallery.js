@@ -1,7 +1,7 @@
 import React from 'react'
 import galary1 from '../../assets/gallery/gallery1.jpg'
 import galary2 from '../../assets/gallery/gallery2.jpg'
-import galary3 from '../../assets/gallery/gallery3.jpg'
+import galary3 from '../../assets/gallery/gallery3.JPG'
 import galary4 from '../../assets/gallery/gallery4.jpg'
 
 import bgImage from '../../assets/doctor/bg.png'
