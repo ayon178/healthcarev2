@@ -9,25 +9,28 @@ import fourthImage from '../../assets/slider/slide_4.png'
 import fifthImage from '../../assets/slider/slide_5.png'
 import sixthImage from '../../assets/slider/slide_6.png'
 
+import first from '../../assets/slider/1.1.jpg'
+import second from '../../assets/slider/1.2.jpg'
+
 const images = [
   {
-    image: firstImage,
+    image: first,
     alt: 'Image 1',
-    title: 'REVOLUTIONARY CONCEPT in EQUIPMENT MAINTENANCE',
-    text: 'Infrared Scanning / Thermography to assess the condition of your Electrical Machineries',
+    title: 'Best healthcare in world class hospitals',
+    text: 'Your journey with us will be comfortable and transparent',
   },
   {
-    image: secondImage,
+    image: second,
     alt: 'Image 2',
-    title: 'Air we breathe is free, Compressed Air is NOT',
-    text: 'Accurately detect & locate the leaks in your production system',
+    title: 'Advanced treatment',
+    text: 'Offering treatment in top healthcare centers with modern equipment',
   },
-  {
-    image: thirdImage,
-    alt: 'Image 3',
-    title: 'Achieve Zero Air Leak',
-    text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
-  },
+  // {
+  //   image: thirdImage,
+  //   alt: 'Image 3',
+  //   title: 'Achieve Zero Air Leak',
+  //   text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
+  // },
   // {
   //   image: fourthImage,
   //   alt: 'Image 4',
@@ -100,47 +103,43 @@ const MainSlider = () => {
               style={{
                 backgroundImage: `linear-gradient(to left, rgba(5,32,73,0.3), rgba(5,32,73,.8)), url(${images[currentSlide].image.src})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'top center',
+                backgroundPosition: ' center',
               }}
             />
           </div>
 
           <div className="md:w-[40%] w-full pr-8">
             <div className={` text-white`}>
-              <h1 className="text-4xl text-white font-semibold w-1/2">
-                {currentSlide === 2 ? (
+              <h1 className="text-4xl text-white font-semibold w-full">
+                {currentSlide === 1 ? (
                   <span
                     style={{ lineHeight: 1.2 }}
-                    className="text-4xl text-primary no_wrap"
+                    className="text-[2rem] text-[#440B72] no_wrap"
                   >
-                    <span className="text-primary ">Achieve</span>
-                    <br /> Zero Air Leak
-                  </span>
-                ) : currentSlide === 1 ? (
-                  <span
-                    style={{ lineHeight: 1.2 }}
-                    className="text-4xl text-primary no_wrap"
-                  >
-                    <span className="text-primary ">
-                      Air we breathe is free
+                    <span className="text-[#440B72] helevetica">
+                      Advanced treatment
+                      <br />
+                      with latest medical technology
                     </span>
-                    {/* <br /> Compressed Air is NOT */}
                   </span>
                 ) : (
                   <span
                     style={{ lineHeight: 1.2 }}
-                    className="text-4xl text-primary no_wrap"
+                    className="text-[2rem] text-[#440B72] no_wrap"
                   >
-                    <span className="text-primary">REVOLUTIONARY CONCEPT</span>
-                    {/* <br /> in EQUIPMENT MAINTENANCE */}
+                    <span className=" no_wrap helevetica">
+                      Best healthcare
+                      <br />
+                      in world class hospitals
+                    </span>
                   </span>
                 )}
               </h1>
-              <p className={`text-md text-primary font-semibold mt-3 pr-8`}>
+              <p className={`text-md text-[#AEA8B4] font-semibold mt-3 pr-8`}>
                 {images[currentSlide].text}
               </p>
               <div className="flex justify-start">
-                <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-primaryText mt-8">
+                <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-[#55f9ff] mt-8">
                   Register Now
                 </button>
               </div>

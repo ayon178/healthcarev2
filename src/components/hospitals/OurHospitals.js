@@ -14,28 +14,28 @@ import hospitalLogoOne from '../../assets/logo_hospital1.png'
 import hospitalLogoTwo from '../../assets/logo_hospital2.png'
 import hospitalLogoThree from '../../assets/logo_hospital3.png'
 
-import bgImage from '../../assets/bg_1.png'
+import bgImage from '../../assets/service_bg_flipped.jpg'
+import About from '../about/About'
 
 const cardData = [
   {
     image: partnerImageOne,
-    title: 'Text Writeup',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque error quis nisi dolore atque',
+    title: 'Gleneagles Global Hospital',
+    description: "India's leading integrated healthcare delivery network",
     icon: hospitalLogoOne,
   },
   {
     image: partnerImageTwo,
-    title: 'Text Writeup',
+    title: 'Citizens Specialty Hospital',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque error quis nisi dolore atque',
+      '(Ultra-modern 300-bed multi- discipline facility spread across 3+ acres in Nallagandla, Hyderabad',
     icon: hospitalLogoTwo,
   },
   {
     image: partnerImageThree,
-    title: 'Text Writeup',
+    title: 'American Oncology Institute',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque error quis nisi dolore atque',
+      'Leading and fastest growing Multi disciplinary oncology network with 15 Hospitals in South Asia',
     icon: hospitalLogoThree,
   },
 ]
@@ -83,28 +83,32 @@ const OurHospitals = () => {
 
   return (
     <div
-      className=" container-fluid pt-4"
+      className=" container-fluid pt-4 pb-10"
       style={{
         backgroundImage: ` url(${bgImage.src})`,
         backgroundSize: 'cover',
-        backdropFilter: 'blur(10px)',
         backgroundPosition: 'top ',
         backgroundRepeat: 'no-repeat',
       }}
     >
       <div className="container mx-auto mt-24 md:flex items-center gap-4">
-        <div className="md:order-2 md:border-l-4  border-secondary pl-4 flex flex-col justify-center relative">
-          <h1 className="text-primary text-2xl md:text-3xl text-center md:text-left font-semibold w-fit mx-auto mt-10 pb-2 border-b-2 md:border-0 border-secondary">
+        <div className="md:order-2 md:border-l-4 w-full md:w-[20%] border-secondary pl-4 flex flex-col justify-center relative">
+          <h1 className="text-primary text-2xl md:text-3xl text-center md:text-left font-semibold w-fit mx-auto md:mx-0 md:mr-auto mt-8 mb-2 border-b-2 md:border-0 border-secondary">
             Our
             <br />
             Hospitals
           </h1>
-          <h1 className="text-center md:text-left mt-10 md:mt-4 mb-5 font-medium bg-white px-4 py-1 text-primary border-primary border-2 rounded-md w-fit block mx-auto md:mx-0">
+          {/* <h1 className="text-center md:text-left mt-10 md:mt-4 mb-5 font-medium bg-white px-4 py-1 text-primary border-primary border-2 rounded-md w-fit block mx-auto md:mx-0">
             Area 1
-          </h1>
+          </h1> */}
+          <p className="text-xs mb-6">
+            Giving international
+            <br /> patients a blend of quality
+            <br /> healthcare & comfort
+          </p>
           <div className="moving-train-left hidden md:block"></div>
         </div>
-        <div className="mx-auto text-center px-2 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full md:w-[80%] lg:w-[70%] gap-4 mt-4">
+        <div className="mx-auto text-center px-2 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full md:w-[70%] gap-4 mt-4">
           {cardData.map((card, index) => (
             <div key={index} className={`partner-card-${index}`}>
               <OurHospitalsCard data={card} />
@@ -120,6 +124,8 @@ const OurHospitals = () => {
         ))}
       </div> */}
       </div>
+
+      <About />
     </div>
   )
 }

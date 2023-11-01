@@ -9,7 +9,7 @@ const OurHospitalsCard = ({ data }) => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
-      className="relative w-full h-[320px] mx-auto max-w-sm p-0 pb-4 bg-slate-100 border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700"
+      className="relative w-full h-[320px] mx-auto max-w-sm p-0 pb-4  rounded-xl shadow dark:bg-gray-800 dark:border-gray-700"
     >
       <div className="partner_bg absolute bottom-0 flex items-center justify-end flex-col  w-full pb-4 h-36">
         <div className="relative h-full w-full">
@@ -23,7 +23,7 @@ const OurHospitalsCard = ({ data }) => {
             />
           </div>
         </div>
-        <h1 className="text-center px-4 text-lg md:text-xl font-semibold mt-3 mb-2 text-secondaryText">
+        <h1 className="text-center px-4 text-lg font-semibold mt-3 mb-2 text-secondaryText">
           {data.title}
         </h1>
         <p className="text-center text-[.7rem] px-4 text-white">

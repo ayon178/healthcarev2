@@ -23,7 +23,7 @@ import iconEight from '../../assets/icon/icon8.png'
 import iconNine from '../../assets/icon/icon9.png'
 import iconTen from '../../assets/icon/icon10.png'
 
-import bgImage from '../../assets/bg_1.png'
+import bgImage from '../../assets/service_bg.jpg'
 
 const cardData = [
   {
@@ -47,7 +47,7 @@ const cardData = [
     icon: iconFive,
   },
   {
-    title: 'Video of Tele-consultation',
+    title: 'Tele-consultation',
     icon: iconSix,
   },
   {
@@ -103,20 +103,20 @@ const OurServices = () => {
       }}
     >
       <div className="container mx-auto md:flex items-center justify-between">
-        <div className="md:w-[40%] border-r-4 mt-10 md:mt-0 border-secondary pr-4 flex flex-col justify-center relative">
+        <div className="md:w-[40%] border-r-4 md:mt-0 border-secondary pr-4 flex flex-col justify-center relative">
           <h1 className="text-primary text-2xl md:text-3xl text-center md:text-right font-semibold  pb-2">
             Our Services
           </h1>
           <p className="text-center md:text-right text-primary text-sm font-medium">
-            Lorem ipsum dolor sit amet consectetur,
+            We facilitate critical patients
             <br />
-            adipisicing elit. Libero, amet?
+            for advanced medical treatment abroad.
           </p>
-          <div className="flex md:justify-end">
+          {/* <div className="flex md:justify-end">
             <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-primaryText mt-2">
               Call to Order
             </button>
-          </div>
+          </div> */}
           <div className="moving-train hidden md:block"></div>
         </div>
         <div className=" w-full md:w-[60%]  mt-8">
@@ -144,7 +144,7 @@ const OurServices = () => {
             ))}
           </div>
 
-          <div className="mx-auto text-center mt-4 px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+          <div className="mx-auto text-center mt-4 pb-2 px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
             {cardData.slice(8, 10).map((card, index) => (
               <div key={index} className={`service-card-${index}`}>
                 <OurServicesCard data={card} />

@@ -59,15 +59,15 @@ const OurDoctors = () => {
       }}
     >
       <div className="container mx-auto px-4 md:px-0 mt-24 md:flex ">
-        <div className="w-1/5">
+        <div className="w-1/5 mt-[42px]">
           <h1 className="text-primary text-2xl md:text-4xl text-center md:text-left font-semibold w-fit  border-b-2 border-secondary mt-10 pb-2">
             Our
             <br />
             Doctors
           </h1>
           <p className="text-sm mt-2 text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-            voluptatem?
+            Medical treatment from globally
+            <br /> renown doctors
           </p>
         </div>
 
