@@ -2,26 +2,47 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { gsap } from 'gsap'
 import { AnimatePresence } from 'framer-motion'
-import mainImage from '../../assets/slider_main.png'
-// import secondImage from '../../assets/slider/slide_2.jpg'
-// import thirdImage from '../../assets/slider/slide_3.jpg'
+import firstImage from '../../assets/slider/slide_1.png'
+import secondImage from '../../assets/slider/slide_2.png'
+import thirdImage from '../../assets/slider/slide_3.png'
+import fourthImage from '../../assets/slider/slide_4.png'
+import fifthImage from '../../assets/slider/slide_5.png'
+import sixthImage from '../../assets/slider/slide_6.png'
 
 const images = [
   {
-    image: mainImage,
+    image: firstImage,
     alt: 'Image 1',
     title: 'REVOLUTIONARY CONCEPT in EQUIPMENT MAINTENANCE',
     text: 'Infrared Scanning / Thermography to assess the condition of your Electrical Machineries',
   },
   {
-    image: mainImage,
+    image: secondImage,
     alt: 'Image 2',
     title: 'Air we breathe is free, Compressed Air is NOT',
     text: 'Accurately detect & locate the leaks in your production system',
   },
   {
-    image: mainImage,
+    image: thirdImage,
     alt: 'Image 3',
+    title: 'Achieve Zero Air Leak',
+    text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
+  },
+  {
+    image: fourthImage,
+    alt: 'Image 4',
+    title: 'REVOLUTIONARY CONCEPT in EQUIPMENT MAINTENANCE',
+    text: 'Infrared Scanning / Thermography to assess the condition of your Electrical Machineries',
+  },
+  {
+    image: fifthImage,
+    alt: 'Image 5',
+    title: 'Air we breathe is free, Compressed Air is NOT',
+    text: 'Accurately detect & locate the leaks in your production system',
+  },
+  {
+    image: sixthImage,
+    alt: 'Image 6',
     title: 'Achieve Zero Air Leak',
     text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
   },
