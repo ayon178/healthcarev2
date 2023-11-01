@@ -12,7 +12,7 @@ const DoctorsAuto = ({ sliderData }) => {
     <div className="relative">
       <Swiper
         slidesPerView={4}
-        spaceBetween={30}
+        spaceBetween={10}
         loop={true} // Enable infinite loop
         loopFillGroupWithBlank={true} // Ensure there is no gap
         autoplay={{
@@ -28,8 +28,8 @@ const DoctorsAuto = ({ sliderData }) => {
       >
         {sliderData.map((slide, index) => {
           return (
-            <SwiperSlide key={index}>
-              <OurDoctorCard data={slide} />
+            <SwiperSlide key={index} >
+              <OurDoctorCard data={slide} classData={'h-80 w-[85%]'} />
             </SwiperSlide>
           )
         })}
@@ -38,7 +38,7 @@ const DoctorsAuto = ({ sliderData }) => {
         {sliderData.map((slide, index) => {
           return (
             <SwiperSlide key={index}>
-              <OurDoctorCard data={slide} />
+              <OurDoctorCard data={slide} classData={'h-80 w-[85%]'} />
             </SwiperSlide>
           )
         })}

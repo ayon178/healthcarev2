@@ -5,6 +5,8 @@ import doctorFour from '../../assets/doct4.png'
 import DoctorsSliderCentered from '../slider/Doctors'
 import DoctorsAuto from '../slider/DoctorsAuto'
 
+import bgImage from '../../assets/bg_1.jpg'
+
 const doctorData = [
   {
     name: 'Walter White',
@@ -46,25 +48,36 @@ const doctorData = [
 
 const OurDoctors = () => {
   return (
-    <div className="container mx-auto px-4 md:px-0 mt-24 md:flex ">
-      <div className="w-1/5">
-        <h1 className="text-primary text-2xl md:text-4xl text-center md:text-left font-semibold w-fit  border-b-2 border-secondary mt-10 pb-2">
-          Our
-          <br />
-          Doctors
-        </h1>
-        <p className="text-sm mt-2 text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          voluptatem?
-        </p>
-      </div>
-
-      <div className="w-4/5">
-        <div className="shadow-lg">
-          <DoctorsSliderCentered sliderData={doctorData} />
+    <div
+      className=" container-fluid"
+      style={{
+        backgroundImage: ` url(${bgImage.src})`,
+        backgroundSize: 'cover',
+        backdropFilter: 'blur(10px)',
+        backgroundPosition: 'top ',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="container mx-auto px-4 md:px-0 mt-24 md:flex ">
+        <div className="w-1/5">
+          <h1 className="text-primary text-2xl md:text-4xl text-center md:text-left font-semibold w-fit  border-b-2 border-secondary mt-10 pb-2">
+            Our
+            <br />
+            Doctors
+          </h1>
+          <p className="text-sm mt-2 text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            voluptatem?
+          </p>
         </div>
-        <div className=" mt-10">
-          <DoctorsAuto sliderData={doctorData} />
+
+        <div className="w-4/5">
+          <div className="">
+            <DoctorsSliderCentered sliderData={doctorData} />
+          </div>
+          <div className=" mt-10">
+            <DoctorsAuto sliderData={doctorData} />
+          </div>
         </div>
       </div>
     </div>

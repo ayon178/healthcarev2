@@ -23,6 +23,8 @@ import iconEight from '../../assets/icon/icon8.png'
 import iconNine from '../../assets/icon/icon9.png'
 import iconTen from '../../assets/icon/icon10.png'
 
+import bgImage from '../../assets/bg_1.jpg'
+
 const cardData = [
   {
     title: 'Selection of Hospital & Doctors',
@@ -90,54 +92,65 @@ const OurServices = () => {
   // }, [])
 
   return (
-    <div className="container mx-auto md:flex items-center justify-between">
-      <div className="md:w-[40%] border-r-4 mt-10 md:mt-0 border-secondary pr-4 flex flex-col justify-center relative">
-        <h1 className="text-primary text-2xl md:text-3xl text-center md:text-right font-semibold  pb-2">
-          Our Services
-        </h1>
-        <p className="text-center md:text-right text-primary text-sm">
-          Lorem ipsum dolor sit amet consectetur,
-          <br />
-          adipisicing elit. Libero, amet?
-        </p>
-        <div className="flex md:justify-end">
-          <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-primaryText mt-2">
-            Call to Order
-          </button>
+    <div
+      className=" container-fluid pb-8"
+      style={{
+        backgroundImage: ` url(${bgImage.src})`,
+        backgroundSize: 'cover',
+        backdropFilter: 'blur(10px)',
+        backgroundPosition: 'top ',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="container mx-auto md:flex items-center justify-between">
+        <div className="md:w-[40%] border-r-4 mt-10 md:mt-0 border-secondary pr-4 flex flex-col justify-center relative">
+          <h1 className="text-primary text-2xl md:text-3xl text-center md:text-right font-semibold  pb-2">
+            Our Services
+          </h1>
+          <p className="text-center md:text-right text-primary text-sm">
+            Lorem ipsum dolor sit amet consectetur,
+            <br />
+            adipisicing elit. Libero, amet?
+          </p>
+          <div className="flex md:justify-end">
+            <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-primaryText mt-2">
+              Call to Order
+            </button>
+          </div>
+          <div className="moving-train hidden md:block"></div>
         </div>
-        <div className="moving-train hidden md:block"></div>
-      </div>
-      <div className=" w-full md:w-[60%]  mt-8">
-        <div className="mx-auto text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
-          {cardData.slice(0, 2).map((card, index) => (
-            <div key={index} className={`service-card-${index}`}>
-              <OurServicesCard data={card} />
-            </div>
-          ))}
-        </div>
+        <div className=" w-full md:w-[60%]  mt-8">
+          <div className="mx-auto text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+            {cardData.slice(0, 2).map((card, index) => (
+              <div key={index} className={`service-card-${index}`}>
+                <OurServicesCard data={card} />
+              </div>
+            ))}
+          </div>
 
-        <div className="mx-auto my-4 text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
-          {cardData.slice(2, 5).map((card, index) => (
-            <div key={index} className={`service-card-${index}`}>
-              <OurServicesCard data={card} />
-            </div>
-          ))}
-        </div>
+          <div className="mx-auto my-4 text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+            {cardData.slice(2, 5).map((card, index) => (
+              <div key={index} className={`service-card-${index}`}>
+                <OurServicesCard data={card} />
+              </div>
+            ))}
+          </div>
 
-        <div className="mx-auto text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
-          {cardData.slice(5, 8).map((card, index) => (
-            <div key={index} className={`service-card-${index}`}>
-              <OurServicesCard data={card} />
-            </div>
-          ))}
-        </div>
+          <div className="mx-auto text-center px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+            {cardData.slice(5, 8).map((card, index) => (
+              <div key={index} className={`service-card-${index}`}>
+                <OurServicesCard data={card} />
+              </div>
+            ))}
+          </div>
 
-        <div className="mx-auto text-center mt-4 px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
-          {cardData.slice(8, 10).map((card, index) => (
-            <div key={index} className={`service-card-${index}`}>
-              <OurServicesCard data={card} />
-            </div>
-          ))}
+          <div className="mx-auto text-center mt-4 px-2 md:px-0 flex-wrap flex items-center justify-center gap-4">
+            {cardData.slice(8, 10).map((card, index) => (
+              <div key={index} className={`service-card-${index}`}>
+                <OurServicesCard data={card} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

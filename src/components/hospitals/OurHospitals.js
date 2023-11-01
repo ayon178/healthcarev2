@@ -14,6 +14,8 @@ import hospitalLogoOne from '../../assets/logo_hospital1.png'
 import hospitalLogoTwo from '../../assets/logo_hospital2.png'
 import hospitalLogoThree from '../../assets/logo_hospital3.png'
 
+import bgImage from '../../assets/bg_1.jpg'
+
 const cardData = [
   {
     image: partnerImageOne,
@@ -80,26 +82,36 @@ const OurHospitals = () => {
   // }, [])
 
   return (
-    <div className="container mx-auto mt-24 md:flex items-center gap-4">
-      <div className="md:order-2 md:border-l-4  border-secondary pl-4 flex flex-col justify-center relative">
-        <h1 className="text-primary text-2xl md:text-3xl text-center md:text-left font-semibold w-fit mx-auto mt-10 pb-2 border-b-2 md:border-0 border-secondary">
-          Our
-          <br />
-          Partners
-        </h1>
-        <h1 className="text-center md:text-left mt-10 md:mt-4 mb-5 font-medium bg-white px-4 py-1 text-primary border-primary border-2 rounded-md w-fit block mx-auto md:mx-0">
-          Area 1
-        </h1>
-        <div className="moving-train-left hidden md:block"></div>
-      </div>
-      <div className="mx-auto text-center px-2 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full md:w-[80%] lg:w-[70%] gap-4 mt-4">
-        {cardData.map((card, index) => (
-          <div key={index} className={`partner-card-${index}`}>
-            <OurHospitalsCard data={card} />
-          </div>
-        ))}
-      </div>
-      {/* <h1 className="text-center mt-5 font-semibold bg-primary px-2 py-1 text-white rounded-md w-fit block mx-auto">Area 2</h1>
+    <div
+      className=" container-fluid py-8"
+      style={{
+        backgroundImage: ` url(${bgImage.src})`,
+        backgroundSize: 'cover',
+        backdropFilter: 'blur(10px)',
+        backgroundPosition: 'top ',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="container mx-auto mt-24 md:flex items-center gap-4">
+        <div className="md:order-2 md:border-l-4  border-secondary pl-4 flex flex-col justify-center relative">
+          <h1 className="text-primary text-2xl md:text-3xl text-center md:text-left font-semibold w-fit mx-auto mt-10 pb-2 border-b-2 md:border-0 border-secondary">
+            Our
+            <br />
+            Partners
+          </h1>
+          <h1 className="text-center md:text-left mt-10 md:mt-4 mb-5 font-medium bg-white px-4 py-1 text-primary border-primary border-2 rounded-md w-fit block mx-auto md:mx-0">
+            Area 1
+          </h1>
+          <div className="moving-train-left hidden md:block"></div>
+        </div>
+        <div className="mx-auto text-center px-2 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full md:w-[80%] lg:w-[70%] gap-4 mt-4">
+          {cardData.map((card, index) => (
+            <div key={index} className={`partner-card-${index}`}>
+              <OurHospitalsCard data={card} />
+            </div>
+          ))}
+        </div>
+        {/* <h1 className="text-center mt-5 font-semibold bg-primary px-2 py-1 text-white rounded-md w-fit block mx-auto">Area 2</h1>
       <div className="mx-auto text-center px-2 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
         {cardData.map((card, index) => (
           <div key={index} className={`partner-card-area-2-${index}`}>
@@ -107,6 +119,7 @@ const OurHospitals = () => {
           </div>
         ))}
       </div> */}
+      </div>
     </div>
   )
 }

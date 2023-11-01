@@ -4,7 +4,7 @@ import aboutImage from '../../assets/slider_1.JPG'
 const About = () => {
   return (
     <div
-      className="container-fluid mt-24 about p-10"
+      className="container-fluid mt-24 about p-10 shadow-lg"
       style={{
         backgroundImage: ` url(${aboutImage.src})`,
         backgroundSize: 'cover',

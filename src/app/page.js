@@ -86,7 +86,6 @@ export default function Home() {
         <About />
         <OurVision />
         <OurDoctors />
-        <DoctorsSliderCentered />
         {/* <Gallery /> */}
         <MainGallery />
         <Appointment />

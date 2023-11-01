@@ -208,3 +208,11 @@ body {
   fill: #007761;
   cursor: pointer;
 }
+
+/* Backgrounds */
+/* Our service bg */
+.our_service_bg {
+  background-image: url('../assets/slider_1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

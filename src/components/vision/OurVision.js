@@ -2,7 +2,7 @@ import visionImage from '../../assets/slider_1.JPG'
 
 const OurVision = () => {
   return (
-    <div className="container-fluid h-screen px-4 md:px-0 mt-24">
+    <div className="container-fluid h-screen px-4 md:px-0 mt-24 shadow-lg">
       {/* <h1 className="text-primary text-2xl md:text-3xl text-center font-semibold w-fit mx-auto border-b-2 border-secondary mt-10 pb-2">
         Our Vision
       </h1> */}
