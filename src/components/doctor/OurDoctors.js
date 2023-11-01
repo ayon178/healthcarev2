@@ -75,10 +75,10 @@ const OurDoctors = () => {
           <div className="">
             <DoctorsSliderCentered sliderData={doctorData} />
           </div>
-          <div className=" mt-10">
-            <DoctorsAuto sliderData={doctorData} />
-          </div>
         </div>
+      </div>
+      <div className=" mt-10">
+        <DoctorsAuto sliderData={doctorData} />
       </div>
     </div>
   )

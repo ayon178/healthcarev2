@@ -31,7 +31,8 @@ const Appointment = () => {
           </h1>
 
           <p className="mt-4 text-white text-[.9rem] text-center">
-            Registered patients will get <span className="font-bold">5%</span>
+            Registered patients will get{' '}
+            <span className="font-bold text-2xl">5%</span>
             <br /> discount on hospital admission
           </p>
         </div>

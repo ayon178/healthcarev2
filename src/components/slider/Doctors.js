@@ -45,7 +45,7 @@ const DoctorsSliderCentered = ({ sliderData }) => {
     centerMode: true,
     focusOnSelect: true,
     infinite: true,
-    centerPadding: '100px',
+    centerPadding: '120px',
     slidesToShow: 3,
     speed: 500,
     nextArrow: <GalleryNextArrow />,

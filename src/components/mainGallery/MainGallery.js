@@ -1,8 +1,8 @@
 import React from 'react'
-import galary1 from '../../assets/gallery/gallery1.png'
-import galary2 from '../../assets/gallery/gallery2.png'
-import galary3 from '../../assets/gallery/gallery3.png'
-import galary4 from '../../assets/gallery/gallery4.png'
+import galary1 from '../../assets/gallery/gallery1.jpg'
+import galary2 from '../../assets/gallery/gallery2.jpg'
+import galary3 from '../../assets/gallery/gallery3.jpg'
+import galary4 from '../../assets/gallery/gallery4.jpg'
 
 import bgImage from '../../assets/doctor/bg.png'
 
@@ -23,9 +23,9 @@ const MainGallery = () => {
           <h1 className="text-primary mx-auto md:mx-0 text-2xl md:text-3xl  font-semibold w-fit border-b-2 border-secondary pb-2">
             Gallery
           </h1>
-          <button className="text-primary px-2 py-1 pointer font-bold rounded-md bg-primaryText mt-8">
+          {/* <button className="text-primary px-2 py-1 pointer font-bold rounded-md bg-primaryText mt-8">
             Learn More
-          </button>
+          </button> */}
         </div>
         <div className="w-full md:w-4/5">
           <div className="flex items-end gap-4 w-[85%] ml-auto">
@@ -41,11 +41,13 @@ const MainGallery = () => {
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <h1 className="text-white text-2xl ">Text Writeup</h1>
-              <p className="text-white text-xs mt-2">
+              <h1 className="text-white text-center text-2xl ">
+                Robotic Surgical System
+              </h1>
+              {/* <p className="text-white text-xs mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate ipsa corporis ullam iusto veniam culpa.
-              </p>
+              </p> */}
             </div>
             {/*image two  */}
             <div
@@ -60,11 +62,13 @@ const MainGallery = () => {
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <h1 className="text-white text-2xl ">Text Writeup</h1>
-              <p className="text-white text-xs mt-2">
+              <h1 className="text-white text-center text-2xl ">
+                International Patient Hall
+              </h1>
+              {/* <p className="text-white text-xs mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate ipsa corporis ullam iusto veniam culpa.
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="flex items-start mt-4 gap-4 w-full">
@@ -79,11 +83,13 @@ const MainGallery = () => {
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <h1 className="text-white text-2xl ">Text Writeup</h1>
-              <p className="text-white text-xs mt-2">
+              <h1 className="text-white text-center text-2xl ">
+                Double Channel Chemotherapy
+              </h1>
+              {/* <p className="text-white text-xs mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate ipsa corporis ullam iusto veniam culpa.
-              </p>
+              </p> */}
             </div>
 
             {/*image four  */}
@@ -97,11 +103,13 @@ const MainGallery = () => {
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <h1 className="text-white text-2xl ">Text Writeup</h1>
-              <p className="text-white text-xs mt-2">
+              <h1 className="text-white text-2xl text-center">
+                Automated Medical Laboratory
+              </h1>
+              {/* <p className="text-white text-xs mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate ipsa corporis ullam iusto veniam culpa.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
