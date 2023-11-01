@@ -6,36 +6,36 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import OurHospitalsCard from './OurHospitalsCard'
-import partnerImageOne from '../../assets/img_hospital1.jpg'
-import partnerImageTwo from '../../assets/img_hospital2.jpg'
-import partnerImageThree from '../../assets/img_hospital3.jpg'
+import partnerImageOne from '../../assets/partner/hospitalPartner1.png'
+import partnerImageTwo from '../../assets/partner/hospitalPartner2.png'
+import partnerImageThree from '../../assets/partner/hospitalPartner3.png'
 
 import hospitalLogoOne from '../../assets/logo_hospital1.png'
 import hospitalLogoTwo from '../../assets/logo_hospital2.png'
 import hospitalLogoThree from '../../assets/logo_hospital3.png'
 
-import bgImage from '../../assets/bg_1.jpg'
+import bgImage from '../../assets/bg_1.png'
 
 const cardData = [
   {
     image: partnerImageOne,
-    title: 'Gleneagles Global Hospital',
+    title: 'Text Writeup',
     description:
-      "The Gleneagles Global Hospital network is India's leading integrated healthcare delivery network that has consistently led medical and technological developments to provide international patients with comprehensive, holístic and world-class clinical care.",
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque error quis nisi dolore atque',
     icon: hospitalLogoOne,
   },
   {
     image: partnerImageTwo,
-    title: 'Citizens Specialty Hospital',
+    title: 'Text Writeup',
     description:
-      'Citizens Specialty Hospital is an ultra-modern 300-bed multi- discipline facility spread across 3+ acres in Nallagandla, Hyderabad focuses on providing holistic multi-specialty health care with advanced technology and facilities at par with international standards of care. Combining the highest quality medical expertise.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque error quis nisi dolore atque',
     icon: hospitalLogoTwo,
   },
   {
     image: partnerImageThree,
-    title: 'American Oncology Institute',
+    title: 'Text Writeup',
     description:
-      'American Oncology Institute (AOI) is the leading and fastest growing Multi disciplinary oncology network with 15 Hospitals in South Asia, blending the latest technology with service excellence through trained staff and benchmarked SOPs.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque error quis nisi dolore atque',
     icon: hospitalLogoThree,
   },
 ]
@@ -83,7 +83,7 @@ const OurHospitals = () => {
 
   return (
     <div
-      className=" container-fluid py-8"
+      className=" container-fluid pt-4"
       style={{
         backgroundImage: ` url(${bgImage.src})`,
         backgroundSize: 'cover',
@@ -97,7 +97,7 @@ const OurHospitals = () => {
           <h1 className="text-primary text-2xl md:text-3xl text-center md:text-left font-semibold w-fit mx-auto mt-10 pb-2 border-b-2 md:border-0 border-secondary">
             Our
             <br />
-            Partners
+            Hospitals
           </h1>
           <h1 className="text-center md:text-left mt-10 md:mt-4 mb-5 font-medium bg-white px-4 py-1 text-primary border-primary border-2 rounded-md w-fit block mx-auto md:mx-0">
             Area 1

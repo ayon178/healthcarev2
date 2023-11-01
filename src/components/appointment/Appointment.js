@@ -1,6 +1,16 @@
+import bgImage from '../../assets/bg_1.png'
+
 const Appointment = () => {
   return (
-    <div className=" mt-24 pb-10">
+    <div
+      className="container-fluid mt-24 pb-10"
+      style={{
+        backgroundImage: ` url(${bgImage.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'top ',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className="md:flex gap-5 justify-between h-full container mx-auto px-4 md:px-0">
         {/* Left box */}
         <div

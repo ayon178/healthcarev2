@@ -28,24 +28,24 @@ const images = [
     title: 'Achieve Zero Air Leak',
     text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
   },
-  {
-    image: fourthImage,
-    alt: 'Image 4',
-    title: 'REVOLUTIONARY CONCEPT in EQUIPMENT MAINTENANCE',
-    text: 'Infrared Scanning / Thermography to assess the condition of your Electrical Machineries',
-  },
-  {
-    image: fifthImage,
-    alt: 'Image 5',
-    title: 'Air we breathe is free, Compressed Air is NOT',
-    text: 'Accurately detect & locate the leaks in your production system',
-  },
-  {
-    image: sixthImage,
-    alt: 'Image 6',
-    title: 'Achieve Zero Air Leak',
-    text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
-  },
+  // {
+  //   image: fourthImage,
+  //   alt: 'Image 4',
+  //   title: 'REVOLUTIONARY CONCEPT in EQUIPMENT MAINTENANCE',
+  //   text: 'Infrared Scanning / Thermography to assess the condition of your Electrical Machineries',
+  // },
+  // {
+  //   image: fifthImage,
+  //   alt: 'Image 5',
+  //   title: 'Air we breathe is free, Compressed Air is NOT',
+  //   text: 'Accurately detect & locate the leaks in your production system',
+  // },
+  // {
+  //   image: sixthImage,
+  //   alt: 'Image 6',
+  //   title: 'Achieve Zero Air Leak',
+  //   text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
+  // },
 ]
 
 const MainSlider = () => {
@@ -85,14 +85,14 @@ const MainSlider = () => {
       <AnimatePresence initial={false}>
         <motion.div
           key={currentSlide}
-          className="absolute top-0 left-0 max-w-screen h-full w-screen overflow-hidden flex items-center justify-between gap-8"
+          className="absolute top-0 left-0 max-w-screen h-full w-screen overflow-hidden md:flex items-center justify-between gap-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1.5 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 2 }}
         >
           <div
-            className="w-1/2 sm:w-full overflow-hidden right_bottom_radius relative"
+            className="md:w-[60%] w-full overflow-hidden right_bottom_radius relative"
             style={{ height: 'calc(100vh - 70px)' }}
           >
             <div
@@ -105,7 +105,7 @@ const MainSlider = () => {
             />
           </div>
 
-          <div className="w-1/2 sm:w-full">
+          <div className="md:w-[40%] w-full pr-8">
             <div className={` text-white`}>
               <h1 className="text-4xl text-white font-semibold w-1/2">
                 {currentSlide === 2 ? (
@@ -136,12 +136,12 @@ const MainSlider = () => {
                   </span>
                 )}
               </h1>
-              <p className={`text-lg text-primary font-semibold mt-3 `}>
+              <p className={`text-md text-primary font-semibold mt-3 pr-8`}>
                 {images[currentSlide].text}
               </p>
               <div className="flex justify-start">
                 <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-primaryText mt-8">
-                  Call to Order
+                  Register Now
                 </button>
               </div>
             </div>

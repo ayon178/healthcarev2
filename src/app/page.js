@@ -84,8 +84,8 @@ export default function Home() {
         <OurServices />
         <OurHospitals />
         <About />
-        <OurVision />
         <OurDoctors />
+        <OurVision />
         {/* <Gallery /> */}
         <MainGallery />
         <Appointment />

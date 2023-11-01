@@ -23,7 +23,7 @@ import iconEight from '../../assets/icon/icon8.png'
 import iconNine from '../../assets/icon/icon9.png'
 import iconTen from '../../assets/icon/icon10.png'
 
-import bgImage from '../../assets/bg_1.jpg'
+import bgImage from '../../assets/bg_1.png'
 
 const cardData = [
   {
@@ -107,7 +107,7 @@ const OurServices = () => {
           <h1 className="text-primary text-2xl md:text-3xl text-center md:text-right font-semibold  pb-2">
             Our Services
           </h1>
-          <p className="text-center md:text-right text-primary text-sm">
+          <p className="text-center md:text-right text-primary text-sm font-medium">
             Lorem ipsum dolor sit amet consectetur,
             <br />
             adipisicing elit. Libero, amet?

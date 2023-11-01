@@ -5,7 +5,7 @@ import doctorFour from '../../assets/doct4.png'
 import DoctorsSliderCentered from '../slider/Doctors'
 import DoctorsAuto from '../slider/DoctorsAuto'
 
-import bgImage from '../../assets/bg_1.jpg'
+import bgImage from '../../assets/doctor/bg.png'
 
 const doctorData = [
   {
@@ -49,11 +49,11 @@ const doctorData = [
 const OurDoctors = () => {
   return (
     <div
-      className=" container-fluid"
+      className=" container-fluid pt-1"
       style={{
         backgroundImage: ` url(${bgImage.src})`,
         backgroundSize: 'cover',
-        backdropFilter: 'blur(10px)',
+        backdropFilter: 'blur(6px)',
         backgroundPosition: 'top ',
         backgroundRepeat: 'no-repeat',
       }}

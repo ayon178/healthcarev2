@@ -1,10 +1,10 @@
 import React from 'react'
-import galary1 from '../../assets/galley1.png'
-import galary2 from '../../assets/gallery2.png'
-import galary3 from '../../assets/gallery3.png'
-import galary4 from '../../assets/gallery4.png'
+import galary1 from '../../assets/gallery/gallery1.png'
+import galary2 from '../../assets/gallery/gallery2.png'
+import galary3 from '../../assets/gallery/gallery3.png'
+import galary4 from '../../assets/gallery/gallery4.png'
 
-import bgImage from '../../assets/bg_1.jpg'
+import bgImage from '../../assets/doctor/bg.png'
 
 const MainGallery = () => {
   return (
@@ -28,15 +28,16 @@ const MainGallery = () => {
           </button>
         </div>
         <div className="w-full md:w-4/5">
-          <div className="grid grid-cols-2 items-end gap-4 w-full">
+          <div className="flex items-end gap-4 w-[85%] ml-auto">
             {/*image one  */}
             <div
-              className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md"
+              className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md w-[60%]"
               style={{
                 backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.1), rgba(82,53,160,.9)), url(${galary1.src})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '280px',
+                height: '250px',
+                width: '100%',
                 backgroundRepeat: 'no-repeat',
               }}
             >
@@ -48,12 +49,14 @@ const MainGallery = () => {
             </div>
             {/*image two  */}
             <div
-              className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md"
+              className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md w-[40%]"
               style={{
                 backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.1), rgba(82,53,160,.9)), url(${galary2.src})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '250px',
+                width: '85%',
+                marginLeft: 'auto',
                 backgroundRepeat: 'no-repeat',
               }}
             >
@@ -64,7 +67,7 @@ const MainGallery = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 items-start mt-4 gap-4 w-full">
+          <div className="flex items-start mt-4 gap-4 w-full">
             {/*image three  */}
             <div
               className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md"
@@ -90,7 +93,7 @@ const MainGallery = () => {
                 backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.1), rgba(82,53,160,.9)), url(${galary4.src})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '280px',
+                height: '250px',
                 backgroundRepeat: 'no-repeat',
               }}
             >
