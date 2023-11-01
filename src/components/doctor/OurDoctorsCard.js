@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from 'react-icons/bs'
+import star from '../../assets/doctor/star.png'
 
 const OurDoctorCard = ({ data, classData }) => {
   return (
@@ -30,6 +31,13 @@ const OurDoctorCard = ({ data, classData }) => {
             {data.details}
           </p>
         </div>
+        <Image
+          src={star.src}
+          alt="star"
+          height={20}
+          width={20}
+          className="absolute -top-2 -left-2 w-fit mx-auto"
+        />
       </div>
     </>
   )
