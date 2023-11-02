@@ -53,7 +53,7 @@ body {
 }
 
 .heading_drop_shadow {
-  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
 }
 
 .heading_no_shadow {

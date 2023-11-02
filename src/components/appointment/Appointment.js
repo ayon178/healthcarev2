@@ -154,7 +154,7 @@ const Appointment = () => {
                   htmlFor="file-upload"
                   className="relative cursor-pointer bg-white rounded-md font-medium text-primary  hover:bg-primary dark:hover:bg-gray-700 dark:hover:text-white dark:bg-gray-700 dark:text-white border-primary border-2 py-1 px-4 mt-7 hover:text-secondaryText duration-150"
                 >
-                  <span>Upload Pescription</span>
+                  <span>Upload Report</span>
                   <input
                     id="file-upload"
                     name="file-upload"

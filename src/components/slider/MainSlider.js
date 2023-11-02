@@ -25,30 +25,6 @@ const images = [
     title: 'Advanced treatment',
     text: 'Offering treatment in top healthcare centers with modern equipment',
   },
-  // {
-  //   image: thirdImage,
-  //   alt: 'Image 3',
-  //   title: 'Achieve Zero Air Leak',
-  //   text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
-  // },
-  // {
-  //   image: fourthImage,
-  //   alt: 'Image 4',
-  //   title: 'REVOLUTIONARY CONCEPT in EQUIPMENT MAINTENANCE',
-  //   text: 'Infrared Scanning / Thermography to assess the condition of your Electrical Machineries',
-  // },
-  // {
-  //   image: fifthImage,
-  //   alt: 'Image 5',
-  //   title: 'Air we breathe is free, Compressed Air is NOT',
-  //   text: 'Accurately detect & locate the leaks in your production system',
-  // },
-  // {
-  //   image: sixthImage,
-  //   alt: 'Image 6',
-  //   title: 'Achieve Zero Air Leak',
-  //   text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
-  // },
 ]
 
 const MainSlider = () => {
@@ -98,7 +74,6 @@ const MainSlider = () => {
             style={{ height: 'calc(100vh - 70px)' }}
           >
             <div
-              
               className="object-cover w-full h-full slide-img"
               style={{
                 backgroundImage: `linear-gradient(to left, rgba(5,32,73,0.3), rgba(5,32,73,.8)), url(${images[currentSlide].image.src})`,
@@ -119,7 +94,10 @@ const MainSlider = () => {
                     <span className="text-[#440B72] helevetica heading_drop_shadow">
                       Advanced treatment
                       <br />
-                      with latest medical technology
+                      with{' '}
+                      <span className="text-[#33C9FF] heading_no_shadow">
+                        latest medical technology
+                      </span>
                     </span>
                   </span>
                 ) : (
@@ -145,7 +123,7 @@ const MainSlider = () => {
                 {images[currentSlide].text}
               </p>
               <div className="flex justify-start">
-                <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-[#6FD7D2] mt-8">
+                <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-[#9EDEF2] mt-8">
                   Register Now
                 </button>
               </div>

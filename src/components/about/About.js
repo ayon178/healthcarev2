@@ -31,7 +31,7 @@ const About = () => {
             ✔ UROLOGY &amp; NEPHROLOGY
           </p>
           <p className=" text-xs text-white bg-[#5235a0b3] px-2 py-2 my-2 rounded-md">
-            ✔ PSYCHIATRY AND PSYCHOLOGIST
+            ✔ PSYCHIATRY AND PSYCHOLOGISY
           </p>
         </div>
         <div className="text-left">
@@ -84,15 +84,15 @@ const About = () => {
           backdropFilter: 'blur(5px)',
         }}
       >
-        <h1 className="text-lg text-white">Our Specialties</h1>
+        {/* <h1 className="text-lg text-white">Our Specialties</h1> */}
         <h1 className="text-2xl md:text-3xl text-secondaryText font-semibold mt-5 mb-2">
           Our Specialties
-          <br />
-          Best Healthcare
+          {/* <br />
+          Best Healthcare */}
         </h1>
         <p className="text-sm text-white">
-          &quot;You can find your necessary medical support from the hospitals
-          of multi disciplinary services&quot;
+          You can find your necessary medical support from the hospitals
+          of multi disciplinary services
         </p>
         {/* <button className="text-primary px-2 py-1 pointer font-bold rounded-md bg-primaryText mt-8">
           Learn More

@@ -66,8 +66,8 @@ const OurDoctors = () => {
             Doctors
           </h1>
           <p className="text-sm mt-2 text-justify">
-            Medical treatment from globally
-            <br /> renown doctors
+            Medical treatment from <br />
+            globally renown doctors
           </p>
         </div>
 
