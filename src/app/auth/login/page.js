@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { toast } from 'react-hot-toast'
 import { BiSolidLockOpen } from 'react-icons/bi'
 
+import loginBg from '../../../assets/login_bg.jpg'
+
 export default function Login() {
   const [loginData, setLoginData] = useState({
     email: '',
@@ -45,9 +47,24 @@ export default function Login() {
   }
 
   return (
-    <div className=" min-h-screen flex items-center justify-center bg-cover bg-center bg-gradient-to-r from-[#5235A0] to-[#371d68]">
+    <div
+      style={{
+        backgroundImage: ` url(${loginBg.src})`,
+        backgroundSize: 'cover',
+        backdropFilter: 'blur(10px)',
+        backgroundPosition: 'top ',
+        backgroundRepeat: 'no-repeat',
+      }}
+      className=" min-h-screen flex items-center justify-center"
+    >
       {/* LockOpen Icon */}
-      <div className="relative bg-white bg-opacity-10 rounded-lg p-8 w-96">
+      <div
+        className="relative bg-opacity-10 rounded-lg p-8 w-96"
+        style={{
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          backdropFilter: '8px',
+        }}
+      >
         <BiSolidLockOpen
           size={62}
           color="#371d68"

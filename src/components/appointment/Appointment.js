@@ -16,7 +16,7 @@ const Appointment = () => {
         <div
           className=" w-full md:w-[35%] h-[484px] flex flex-col px-5 items-center justify-center rounded-md"
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.4), rgba(82,53,160,1))`,
+            backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.2), rgba(82,53,160,1.5))`,
           }}
         >
           <h1

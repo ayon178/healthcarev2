@@ -94,10 +94,11 @@ const MainSlider = () => {
           transition={{ duration: 2 }}
         >
           <div
-            className="md:w-[60%] w-full overflow-hidden right_bottom_radius relative"
+            className="md:w-[65%] w-full overflow-hidden right_bottom_radius relative"
             style={{ height: 'calc(100vh - 70px)' }}
           >
             <div
+              
               className="object-cover w-full h-full slide-img"
               style={{
                 backgroundImage: `linear-gradient(to left, rgba(5,32,73,0.3), rgba(5,32,73,.8)), url(${images[currentSlide].image.src})`,
@@ -107,15 +108,15 @@ const MainSlider = () => {
             />
           </div>
 
-          <div className="md:w-[40%] w-full pr-8">
+          <div className="md:w-[35%] w-full pr-8">
             <div className={` text-white`}>
               <h1 className="text-4xl text-white font-semibold w-full">
                 {currentSlide === 1 ? (
                   <span
                     style={{ lineHeight: 1.2 }}
-                    className="text-[2rem] text-[#440B72] no_wrap"
+                    className="text-[30px] text-[#440B72] no_wrap"
                   >
-                    <span className="text-[#440B72] helevetica">
+                    <span className="text-[#440B72] helevetica heading_drop_shadow">
                       Advanced treatment
                       <br />
                       with latest medical technology
@@ -124,12 +125,18 @@ const MainSlider = () => {
                 ) : (
                   <span
                     style={{ lineHeight: 1.2 }}
-                    className="text-[2rem] text-[#440B72] no_wrap"
+                    className="text-[30px] text-[#440B72] no_wrap"
                   >
-                    <span className=" no_wrap helevetica">
-                      Best healthcare
+                    <span className=" no_wrap helevetica heading_drop_shadow">
+                      <span className="text-[#33C9FF] heading_no_shadow">
+                        Best healthcare
+                      </span>
                       <br />
-                      in world class hospitals
+                      in{' '}
+                      <span className="text-[#33C9FF] heading_no_shadow">
+                        world class
+                      </span>{' '}
+                      hospitals
                     </span>
                   </span>
                 )}
@@ -138,7 +145,7 @@ const MainSlider = () => {
                 {images[currentSlide].text}
               </p>
               <div className="flex justify-start">
-                <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-[#55f9ff] mt-8">
+                <button className="text-primary px-4 py-2 pointer font-bold rounded-md bg-[#6FD7D2] mt-8">
                   Register Now
                 </button>
               </div>
