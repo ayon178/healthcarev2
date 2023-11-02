@@ -30,16 +30,16 @@ const Appointment = () => {
             <br /> Now
           </h1>
 
-          <p className="mt-4 text-white text-[.9rem] text-center">
+          <p className="mt-4 text-white text-[1.3rem] text-center">
             Registered patients will get{' '}
-            <span className="font-bold text-2xl">5%</span>
+            <span className="font-bold text-3xl">5%</span>
             <br /> discount on hospital admission
           </p>
         </div>
         {/* Right box */}
         <div className="w-full mt-4 md:mt-0 md:w-[65%] shadow-md appointment_border px-4 py-5 rounded-md">
           <h1 className="text-2xl md:text-3xl text-center font-semibold w-fit mx-auto border-b-2 text-primary border-secondary mb-4 mt-10 pb-2">
-            Make an Inquiry
+            Register to get your ID
           </h1>
           <p className="text-sm text-center mt-3">
             Fill up the form and submit
@@ -173,7 +173,7 @@ const Appointment = () => {
                 type="submit"
                 className="bg-primary px-4 py-2 rounded-md text-white font-medium"
               >
-                Submit for Inquiry
+                Submit
               </button>
             </div>
           </form>

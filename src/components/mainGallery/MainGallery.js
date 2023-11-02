@@ -19,10 +19,13 @@ const MainGallery = () => {
       }}
     >
       <div className="container mx-auto md:flex items-start mt-24 md:px-32">
-        <div className="w-full md:w-1/5 mt-24">
+        <div className="w-full flex flex-col justify-center items-center md:w-1/5 mt-24 text-center">
           <h1 className="text-primary mx-auto md:mx-0 text-2xl md:text-3xl  font-semibold w-fit border-b-2 border-secondary pb-2">
             View Gallery
           </h1>
+          <p className="text-sm mt-2 text-center">
+            You can find the gallery images from our hospitals here
+          </p>
           {/* <button className="text-primary px-2 py-1 pointer font-bold rounded-md bg-primaryText mt-8">
             Learn More
           </button> */}
@@ -71,46 +74,50 @@ const MainGallery = () => {
               </p> */}
             </div>
           </div>
-          <div className="flex items-start mt-4 gap-4 w-full">
-            {/*image three  */}
-            <div
-              className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md"
-              style={{
-                backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.1), rgba(82,53,160,.9)), url(${galary3.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                height: '250px',
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1 className="text-white text-center text-2xl ">
-                Double Channel Chemotherapy
-              </h1>
-              {/* <p className="text-white text-xs mt-2">
+        </div>
+      </div>
+      <div className=" container mx-auto">
+        <div className="w-[90%] flex items-start mt-4 gap-4">
+          {/*image three  */}
+          <div
+            className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.1), rgba(82,53,160,.9)), url(${galary3.src})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              height: '250px',
+              width: '50%',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <h1 className="text-white text-center text-2xl ">
+              Double Channel Chemotherapy
+            </h1>
+            {/* <p className="text-white text-xs mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate ipsa corporis ullam iusto veniam culpa.
               </p> */}
-            </div>
+          </div>
 
-            {/*image four  */}
-            <div
-              className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md"
-              style={{
-                backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.1), rgba(82,53,160,.9)), url(${galary4.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                height: '250px',
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1 className="text-white text-2xl text-center">
-                Automated Medical Laboratory
-              </h1>
-              {/* <p className="text-white text-xs mt-2">
+          {/*image four  */}
+          <div
+            className="pl-10 pr-8 py-8 flex flex-col justify-end shadow-md"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.1), rgba(82,53,160,.9)), url(${galary4.src})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              height: '250px',
+              width: '50%',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <h1 className="text-white text-2xl text-center">
+              Automated Medical Laboratory
+            </h1>
+            {/* <p className="text-white text-xs mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate ipsa corporis ullam iusto veniam culpa.
               </p> */}
-            </div>
           </div>
         </div>
       </div>
