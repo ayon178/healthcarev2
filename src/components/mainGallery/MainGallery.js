@@ -19,9 +19,9 @@ const MainGallery = () => {
       }}
     >
       <div className="container mx-auto md:flex items-start mt-24 md:px-32">
-        <div className="w-full md:w-1/5">
+        <div className="w-full md:w-1/5 mt-24">
           <h1 className="text-primary mx-auto md:mx-0 text-2xl md:text-3xl  font-semibold w-fit border-b-2 border-secondary pb-2">
-            Gallery
+            View Gallery
           </h1>
           {/* <button className="text-primary px-2 py-1 pointer font-bold rounded-md bg-primaryText mt-8">
             Learn More

@@ -63,7 +63,7 @@ const cardData = [
     icon: iconNine,
   },
   {
-    title: 'Quality/Anial monitoring',
+    title: 'Quality/Annual Monitoring',
     icon: iconTen,
   },
 ]

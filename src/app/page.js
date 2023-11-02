@@ -30,11 +30,10 @@ export default function Home() {
       const timeline = gsap.timeline({ paused: true })
 
       timeline.to(navbar, {
-        // backgroundColor: 'red',
         backdropFilter: 'blur(10px)',
         duration: 0.1,
         ease: 'power3.inOut',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
         marginTop: 0,
         paddingBottom: '.8rem',
         paddingTop: '.8rem',

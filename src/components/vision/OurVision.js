@@ -19,14 +19,14 @@ const OurVision = () => {
       >
         <div className=" px-8 text-left mx-auto w-full sm:w-[90%] md:w-[70%] lg-w-[60%]">
           {/* <h1 className="text-white text-xl">Our Vision</h1> */}
-          <h1 className="text-secondaryText mt-4 mb-6 text-4xl md:text-6xl font-semibold">
+          <h1 className="text-secondaryText text-center mt-4 mb-6 text-4xl md:text-7xl font-semibold">
             Why Choose Us
           </h1>
-          <p className="text-white text-sm text-justify mt-4 w-full md:w-1/2">
-            &quot; Two brains are better than one, hence it is useful to take
-            another opinion. If you have the diagnosis and treatment plan a
-            second opinion through us will offer more information and logical
-            solution that will help you take the correct decision. &quot;
+          <p style={{wordSpacing:1}} className="text-white text-lg text-center mt-4 w-full mx-auto md:w-3/4">
+            Two brains are better than one, hence it is useful to take another
+            opinion. If you have the diagnosis and treatment plan a second
+            opinion through us will offer more information and logical solution
+            that will help you take the correct decision.
           </p>
         </div>
       </div>

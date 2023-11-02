@@ -28,7 +28,7 @@ const cardData = [
     image: partnerImageTwo,
     title: 'Citizens Specialty Hospital',
     description:
-      '(Ultra-modern 300-bed multi- discipline facility spread across 3+ acres in Nallagandla, Hyderabad',
+      'Ultra-modern 300-bed multi- discipline facility spread across 3+ acres in Nallagandla, Hyderabad',
     icon: hospitalLogoTwo,
   },
   {
